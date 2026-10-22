@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pilates Studio | Reserva tu cita</title>
+
+    <!-- Tipo de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="logo">
+            PILATES
+            <span>STUDIO</span>
+        </div>
+
+        <div>
+            <h1>Pilates Studio</h1>
+            <p>Equilibrio, movimiento y bienestar</p>
+        </div>
+    </header>
+
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#clases">Clases</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#cita">Reservar cita</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#Conocenos">Conocenos</a>
+    </nav>
+
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio" class="inicio">
+
+            <div class="texto-inicio">
+
+                <h2>Encuentra tu equilibrio</h2>
+
+                <p>
+                    Disfruta de nuestras clases de Pilates y reserva
+                    tu espacio de manera sencilla.
+                </p>
+
+                <a href="#cita" class="boton">
+                    Reservar una cita
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLASES -->
+        <section id="clases">
+
+            <h2>Nuestras clases</h2>
+
+            <p class="descripcion">
+                Elige la clase que más te interese.
+            </p>
+
+            <div class="galeria">
+
+                <div class="tarjeta">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80"
+                        alt="Pilates básico">
+
+                    <h3>Pilates básico</h3>
+
+                    <p>
+                        Ideal para comenzar y conocer los movimientos
+                        fundamentales.
+                    </p>
+
+                    <button onclick="seleccionarClase('Pilates básico')">
+                        Elegir clase
+                    </button>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80"
+                        alt="Pilates intermedio">
+
+                    <h3>Pilates intermedio</h3>
+
+                    <p>
+                        Para continuar desarrollando tus habilidades
+                        y movimientos.
+                    </p>
+
+                    <button onclick="seleccionarClase('Pilates intermedio')">
+                        Elegir clase
+                    </button>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80"
+                        alt="Pilates relajante">
+
+                    <h3>Pilates relajante</h3>
+
+                    <p>
+                        Una sesión enfocada en movimientos suaves
+                        y relajación.
+                    </p>
+
+                    <button onclick="seleccionarClase('Pilates relajante')">
+                        Elegir clase
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HORARIOS -->
+        <section id="horarios">
+
+            <h2>Horarios disponibles</h2>
+
+            <table>
+
+                <tr>
+                    <th>Día</th>
+                    <th>Hora</th>
+                    <th>Clase</th>
+                    <th>Disponibilidad</th>
+                </tr>
+
+                <tr>
+                    <td>Lunes</td>
+                    <td>9:00 AM</td>
+                    <td>Pilates básico</td>
+                    <td>Disponible</td>
+                </tr>
+
+                <tr>
+                    <td>Miércoles</td>
+                    <td>5:00 PM</td>
+                    <td>Pilates intermedio</td>
+                    <td>Disponible</td>
+                </tr>
+
+                <tr>
+                    <td>Viernes</td>
+                    <td>7:00 PM</td>
+                    <td>Pilates relajante</td>
+                    <td>Disponible</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ================= GALERÍA ================= -->
+        
+
+            
+
+
+        <!-- ================= FORMULARIO ================= -->
+        <section id="cita">
+
+            <h2>Reserva tu cita</h2>
+
+            <p class="descripcion">
+                Completa el formulario para solicitar tu clase.
+            </p>
+
+            <form id="formularioCita">
+
+                <label for="nombre">
+                    Nombre completo:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    required>
+
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="ejemplo@correo.com"
+                    required>
+
+
+                <label for="fecha">
+                    Fecha:
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                    required>
+
+
+                <label for="hora">
+                    Hora:
+                </label>
+
+                <select id="hora" required>
+
+                    <option value="">
+                        Selecciona un horario
+                    </option>
+
+                    <option>9:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>5:00 PM</option>
+                    <option>7:00 PM</option>
+
+                </select>
+
+
+                <label for="clase">
+                    Tipo de clase:
+                </label>
+
+                <select id="clase" required>
+
+                    <option value="">
+                        Selecciona una clase
+                    </option>
+
+                    <option>Pilates básico</option>
+                    <option>Pilates intermedio</option>
+                    <option>Pilates relajante</option>
+
+                </select>
+
+
+                <label for="mensaje">
+                    Comentarios:
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    rows="5"
+                    placeholder="Escribe algún comentario...">
+                </textarea>
+
+
+                <div class="botones">
+
+                    <button type="submit">
+                        Reservar cita
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="limpiar">
+                        Limpiar
+                    </button>
+
+                </div>
+
+            </form>
+
+            <!-- Mensaje de confirmación -->
+            <div id="mensajeConfirmacion"></div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+
+            <h2>Contáctanos</h2>
+
+            <p>📍 Calle Principal #123</p>
+
+            <p>📞 33 1234 5678</p>
+
+            <p>✉️ pilatesstudio@gmail.com</p>
+
+            <br>
+
+            <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                class="boton">
+                Ver ubicación
+            </a>
+
+        </section>
+<!-- SECCIÓN CONÓCENOS -->
+<section id="Inicio">
+
+</section>
+<section id="Conocenos" class="seccion-conocenos">
+
+    <div class="contenido-conocenos">
+        <div class="texto-conocenos">
+            <span class="subtitulo">UN ESPACIO PARA TI</span>
+
+            <h2>Conocenos</h2>
+
+            <p>
+                Bienvenidos a Pilates Studio, un espacio creado
+                para conectar cuerpo y mente a través del movimiento.
+            </p>
+
+            <p>
+                Nuestro objetivo es ayudarte a mejorar tu flexibilidad,
+                fortalecer tu cuerpo y encontrar un momento de
+                tranquilidad en tu día.
+            </p>
+
+            <p>
+                Queremos acompañarte en tu camino hacia una vida
+                más activa, saludable y equilibrada.
+            </p>
+
+            <a href="#cita" class="boton conocenos-boton">
+                ¡Ven a conocernos!
+            </a>
+        </div>
+
+        <div class="imagen-conocenos">
+            <img
+                src="SofiayYuri.jpeg"
+                alt="Interior de Pilates Studio"
+            >
+        </div>
+    </div>
+    
+
+</section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <h3>Pilates Studio</h3>
+
+        <p>
+            Equilibrio, movimiento y bienestar.
+        </p>
+
+        <div class="enlaces-footer">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#clases">Clases</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#cita">Reservar</a>
+            <a href="#Conocenos">Conocenos</a>
+
+        </div>
+        
+</section>
+
+        <p class="copyright">
+            © 2026 Pilates Studio | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
